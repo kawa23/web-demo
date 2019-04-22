@@ -1,11 +1,10 @@
 [uwsgi]
-module = run:app
-master = true
-processes = 3
+module = run:app                                    # project start, see run.py
+master = true                                       # master mode
+processes = 3                                       # processing number
 
-chdir = /home/cnn/www/flask-demo
-pythonpath = /home/cnn/www/flask-demo/venv
-socket = /home/cnn/uwsgi/socket/flask-demo.sock
-logto = /home/cnn/uwsgi/logs/flask-demo.log
-chmod-socket = 666
-vacuum = true
+chdir = /home/cnn/www/flask-demo                    # project root directory
+pythonpath = /home/cnn/www/flask-demo/venv          # project environment
+socket = /home/cnn/uwsgi/socket/flask-demo.sock     # uwsgi socket file, communication with nginx
+logto = /home/cnn/uwsgi/logs/flask-demo.log         # uwsgi logger file
+chmod-socket = 666                                  # file permission for socket file
