@@ -8,7 +8,5 @@ pythonpath = %(chdir)/venv                          # project environment
 socket = %(chdir)/uwsgi/flask-demo.sock             # uwsgi socket file, communication with nginx
 logto = %(chdir)/uwsgi/flask-demo.log               # uwsgi logger file
 chmod-socket = 666                                  # file permission for socket file
-
-# setting for monitoring the uwsgi
-stats=%(chdir)/uwsgi/uwsgi.status
+stats=%(chdir)/uwsgi/uwsgi.status                   # setting for monitoring the uwsgi
 pidfile=%(chdir)/uwsgi/uwsgi.pid
