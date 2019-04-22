@@ -4,7 +4,11 @@ master = true                                       # master mode
 processes = 3                                       # processing number
 
 chdir = /home/cnn/www/flask-demo                    # project root directory
-pythonpath = /home/cnn/www/flask-demo/venv          # project environment
-socket = /home/cnn/uwsgi/socket/flask-demo.sock     # uwsgi socket file, communication with nginx
-logto = /home/cnn/uwsgi/logs/flask-demo.log         # uwsgi logger file
+pythonpath = %(chdir)/venv                          # project environment
+socket = %(chdir)/uwsgi/flask-demo.sock             # uwsgi socket file, communication with nginx
+logto = %(chdir)/uwsgi/flask-demo.log               # uwsgi logger file
 chmod-socket = 666                                  # file permission for socket file
+
+# setting for monitoring the uwsgi
+stats=%(chdir)/uwsgi/uwsgi.status
+pidfile=%(chdir)/uwsgi/uwsgi.pid
