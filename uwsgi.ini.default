@@ -1,0 +1,11 @@
+[uwsgi]
+module = run:app
+master = true
+processes = 3
+
+chdir = /home/cnn/www/flask-demo
+pythonpath = /home/cnn/www/flask-demo/venv
+socket = /home/cnn/uwsgi/socket/flask-demo.sock
+logto = /home/cnn/uwsgi/logs/flask-demo.log
+chmod-socket = 666
+vacuum = true

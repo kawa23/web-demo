@@ -1,0 +1,8 @@
+flask
+uwsgi
+flask-sqlalchemy
+pymysql
+flask-restful
+flask-script
+flask_migrate
+pysqlite3  # apt-get install libsqlite3-dev
