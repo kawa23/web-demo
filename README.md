@@ -1,6 +1,6 @@
 ### Install requirement
 ```pip install -r requirments.txt```
-### Configuration project environment
+### Configure
 - ```cp uwsgi/uwsgi.ini.default uwsgi.ini``` and configuration ```uwsgi.ini``` file according to your project
 - ```cp supervisor/supervisor.conf.default supervisor/supervisor.conf``` and configuration ```supervisor.conf``` file according to your project
 ### Run
