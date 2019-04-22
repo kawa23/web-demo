@@ -1,11 +1,11 @@
-command=/home/cnn/www/flask-demo/venv/bin/uwsgi --ini /www/wwwroot/uwsgi.ini    # supervisor commond
-directory = /home/cnn/www/flask-demo                                            # project root directory
-startsecs= 5                                                                    # start seconds, according to your task
-stopwaitsecs= 5                                                                 # end seconds, according to your task
-autostart=true                                                                  # auto start
-autorestart=true                                                                # auto restart if service stop
-stdout_logfile=/home/cnn/supervisord/log/supervisord.log                        # supervisor logger file
-stderr_logfile=/home/cnn/supervisord/log/supervisord_error.log                  # supervisor error information file
+command=/home/cnn/www/flask-demo/venv/bin/uwsgi --ini /home/cnn/www/flask-demo/uwsgi.ini    # supervisor commond
+directory = /home/cnn/www/flask-demo                                                        # project root directory
+startsecs= 5                                                                                # start seconds, according to your task
+stopwaitsecs= 5                                                                             # end seconds, according to your task
+autostart=true                                                                              # auto start
+autorestart=true                                                                            # auto restart if service stop
+stdout_logfile=/home/cnn/supervisord/log/supervisord.log                                    # supervisor logger file
+stderr_logfile=/home/cnn/supervisord/log/supervisord_error.log                              # supervisor error information file
 
 [supervisord]
-loglevel=info                                                                   # supervisor logger level
+loglevel=info                                                                               # supervisor logger level
