@@ -1,3 +1,4 @@
+[program:python]
 command=/home/cnn/www/flask-demo/venv/bin/uwsgi --ini /home/cnn/www/flask-demo/uwsgi.ini    # supervisor commond
 directory = /home/cnn/www/flask-demo                                                        # project root directory
 startsecs= 5                                                                                # start seconds, according to your task
