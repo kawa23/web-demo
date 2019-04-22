@@ -1,0 +1,12 @@
+server {
+    listen 7003;
+    server_name 172.18.20.240;
+    charset      utf-8;
+    access_log  /var/log/nginx/flask-demo_access.log;
+    error_log  /var/log/nginx/flask-demo_error.log;
+
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:/home/cnn/uwsgi/socket/flask-demo.sock;
+    }
+}
