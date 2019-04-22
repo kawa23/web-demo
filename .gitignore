@@ -3,3 +3,5 @@ venv/*
 *.ini
 .idea/*
 *.conf
+*.pid
+*.log
