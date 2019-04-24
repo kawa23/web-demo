@@ -1,0 +1,5 @@
+[mysql]
+host = mysql host ip
+user = mysql user
+password = mysql user password
+db = mysql database name

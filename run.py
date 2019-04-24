@@ -1,3 +1,9 @@
+# @Time      : 2019.04.18
+# @Author    : kawa Yeung
+# @Licence   : MIT
+# @function  : database utils
+
+
 from flask import Flask
 
 
